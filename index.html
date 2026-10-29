@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <title>Fortune Giveaway | Financial Assistance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">FG</span><span>FORTUNE <b>GIVEAWAY</b></span></a>
+    <a class="nav-apply" href="#apply">Apply for assistance</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">HOPE • OPPORTUNITY • COMMUNITY</p>
+        <h1>A little help can make <em>a big difference.</em></h1>
+        <p class="intro">Fortune Giveaway is a financial-assistance initiative where people can submit a request for consideration. Every application is reviewed; applying does not guarantee funding.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#apply">Apply for assistance <span>↗</span></a>
+          <a class="button secondary" href="#how">How it works</a>
+        </div>
+        <p class="free-note">✓ Applying is free. Never pay a fee to receive assistance.</p>
+      </div>
+      <div class="hero-card" aria-label="Fortune Giveaway message">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="coin">FG</div>
+        <div class="card-label">FORTUNE GIVEAWAY</div>
+        <div class="card-message">Help today.<br><strong>Hope tomorrow.</strong></div>
+        <div class="card-foot"><span>COMMUNITY SUPPORT</span><span>♥</span></div>
+      </div>
+    </section>
+
+    <section class="steps section" id="how">
+      <div class="section-heading"><p class="eyebrow">SIMPLE & TRANSPARENT</p><h2>How it works</h2><p>Three simple steps to request support.</p></div>
+      <div class="step-grid">
+        <article class="step"><span class="step-number">01</span><h3>Submit a request</h3><p>Complete the application form with accurate information about your needs.</p></article>
+        <article class="step"><span class="step-number">02</span><h3>Application review</h3><p>Your request can be reviewed by the giveaway administrator. You may be contacted for clarification.</p></article>
+        <article class="step"><span class="step-number">03</span><h3>Receive an update</h3><p>Applicants should only rely on official messages from Fortune Giveaway about their application.</p></article>
+      </div>
+    </section>
+
+    <section class="apply-section section" id="apply">
+      <div class="form-intro">
+        <p class="eyebrow">YOUR REQUEST STARTS HERE</p>
+        <h2>Apply for<br><em>financial assistance.</em></h2>
+        <p>Tell us a little about your situation. Please share only information needed to review your request.</p>
+        <div class="privacy-note"><span>🔒</span><div><strong>Your privacy matters</strong><p>This demo form does not send or store your application online yet. Connect a secure backend before publishing it for real applicants.</p></div></div>
+      </div>
+      <form id="application-form" class="application-form">
+        <div class="form-top"><span class="form-dot"></span><span>APPLICATION FORM</span><span class="required-note">* Required</span></div>
+        <label>Full name *<input name="fullName" autocomplete="name" maxlength="100" required placeholder="Enter your full name"></label>
+        <div class="two-col">
+          <label>Email address *<input name="email" type="email" autocomplete="email" maxlength="254" required placeholder="you@example.com"></label>
+          <label>Country *<input name="country" maxlength="80" required placeholder="e.g. Nigeria"></label>
+        </div>
+        <label>Amount requested (NGN) *<input name="amount" type="number" min="1" max="100000000" step="1" required placeholder="e.g. 50000"></label>
+        <label>What do you need assistance with? *<select name="category" required><option value="">Choose a category</option><option>Education</option><option>Food and basic needs</option><option>Medical or emergency costs</option><option>Small business</option><option>Housing</option><option>Other</option></select></label>
+        <label>Explain how the assistance would help *<textarea name="reason" rows="5" maxlength="2000" required placeholder="Describe your situation (maximum 2,000 characters)"></textarea></label>
+        <label class="consent"><input type="checkbox" name="consent" required><span>I confirm that the information above is accurate and understand that applying does not guarantee funding.</span></label>
+        <button class="button primary submit-button" type="submit">Submit application <span>↗</span></button>
+        <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+        <p class="small-print">Do not include passwords, bank PINs, card details, or identity documents in this form.</p>
+      </form>
+    </section>
+
+    <section class="transparency section">
+      <p class="eyebrow">BUILT ON TRUST</p><h2>Giving should be clear, safe, and respectful.</h2>
+      <p>Fortune Giveaway should publish clear eligibility rules, selection criteria, and contact information before accepting real applications. Never ask applicants to pay a fee to apply or claim assistance.</p>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">FG</span><span>FORTUNE <b>GIVEAWAY</b></span></a><p>© <span id="year"></span> Fortune Giveaway. Built to support people with dignity.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
